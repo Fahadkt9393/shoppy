@@ -25,6 +25,20 @@ Shoppy is a full-stack e-commerce web application built using the MERN stack. It
 - JavaScript
 - Vite
 - CSS
+## Screenshots
+
+### 1. Home Page
+![Shoppy Home Page](screenshots/shoppy-home.png)
+
+### 2. Shop Page
+![Shoppy Shop Page](screenshots/shoppy-shop.png)
+
+### 3. Product Details
+![Shoppy Product Details](screenshots/shoppy-product.png)
+
+### 4. My Orders
+![Shoppy My Orders](screenshots/shoppy-orders.png)
+
 
 **Backend**
 - Node.js
