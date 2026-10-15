@@ -34,16 +34,13 @@ const orderItemSchema = new mongoose.Schema(
   },
   { _id: false }
 );
-
-
 const orderSchema = new mongoose.Schema(
   {
-    userId: {
-  type: mongoose.Schema.Types.ObjectId,
-  ref: "User",
-  required: true,
-},
-
+       userId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
     customer: {
       fullName: { type: String, required: true, trim: true },
       email: { type: String, required: true, trim: true, lowercase: true },
