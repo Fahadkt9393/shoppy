@@ -1,11 +1,10 @@
 # Shoppy - MERN E-Commerce Website
 
-Shoppy is a full-stack e-commerce web application built using the MERN stack. It allows users to browse products, manage their shopping cart, place orders, and view their order history. Administrators can manage products, view orders, and update order statuses.
+Shoppy is a full-stack e-commerce web application built using the MERN stack (MongoDB, Express.js, React, and Node.js). It allows users to browse products, manage their shopping cart, place orders, and view their order history. Administrators can manage products, view customer orders, and update order statuses.
 
 ## Features
 
 ### Customer Features
-
 - Browse available products
 - View individual product details
 - Add products to the shopping cart
@@ -15,7 +14,6 @@ Shoppy is a full-stack e-commerce web application built using the MERN stack. It
 - View previous orders
 
 ### Admin Features
-
 - View dashboard statistics
 - Add, update, and delete products
 - View customer orders
@@ -25,7 +23,6 @@ Shoppy is a full-stack e-commerce web application built using the MERN stack. It
 ## Technologies Used
 
 ### Frontend
-
 - React
 - JavaScript
 - Vite
@@ -33,7 +30,6 @@ Shoppy is a full-stack e-commerce web application built using the MERN stack. It
 - React Router
 
 ### Backend
-
 - Node.js
 - Express.js
 - MongoDB
@@ -44,19 +40,15 @@ Shoppy is a full-stack e-commerce web application built using the MERN stack. It
 ## Screenshots
 
 ### Home Page
-
 ![Shoppy Home Page](screenshots/shoppy-home.png)
 
 ### Shop Page
-
 ![Shoppy Shop Page](screenshots/shoppy-shop.png)
 
 ### Product Details
-
 ![Shoppy Product Details](screenshots/shoppy-product.png)
 
 ### My Orders
-
 ![Shoppy My Orders](screenshots/shoppy-orders.png)
 
 ## Project Structure
@@ -80,9 +72,8 @@ shoppy/
 ## Getting Started
 
 ### Prerequisites
-
 - Node.js and npm
-- A MongoDB database or MongoDB connection URI
+- MongoDB database or MongoDB connection URI
 - Git
 
 ### 1. Clone the Repository
@@ -94,14 +85,14 @@ cd shoppy
 
 ### 2. Set Up the Backend
 
-Open a terminal in the project directory and run:
+Navigate to the backend directory:
 
 ```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file inside the `backend` directory with your own configuration:
+Create a `.env` file inside the `backend` directory:
 
 ```env
 MONGO_URI=your_mongodb_connection_string
@@ -109,7 +100,7 @@ JWT_SECRET=your_jwt_secret
 PORT=5001
 ```
 
-Replace the example values with your actual local configuration. Never publish your real database credentials or JWT secret on GitHub.
+Replace the example values with your actual local configuration. Never publish real database credentials or JWT secrets on GitHub.
 
 Start the backend server:
 
@@ -121,7 +112,7 @@ Keep the backend terminal running.
 
 ### 3. Set Up the Frontend
 
-Open a second terminal window. Navigate to the project root directory if necessary, then run:
+Open a second terminal and navigate to the project root directory. Then run:
 
 ```bash
 cd frontend
@@ -135,8 +126,8 @@ Open the local URL displayed by Vite in your browser.
 
 - Passwords are hashed before being stored.
 - JWT is used for authentication.
-- Administrative operations are protected by authentication and role-based authorization.
-- Environment variables are kept out of version control.
+- Administrative operations use authentication and role-based authorization.
+- Environment variables should be kept out of version control.
 
 ## Future Improvements
 
@@ -151,8 +142,3 @@ Open the local URL displayed by Vite in your browser.
 **Fahad K.T**
 
 GitHub: [Fahadkt9393](https://github.com/Fahadkt9393)
-
----
-## About Shoppy
-
-Shoppy is a full-stack e-commerce web application built using the MERN stack (MongoDB, Express.js, React, and Node.js). It features user authentication, product management, shopping cart functionality, checkout, order management, and inventory tracking.
