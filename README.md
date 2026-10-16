@@ -1,6 +1,6 @@
-# Shoppy – MERN E-Commerce Website
+# Shoppy - MERN E-Commerce Website
 
-Shoppy is a full-stack e-commerce web application built using the MERN stack. It provides a simple shopping experience where users can browse products, manage their cart, place orders, and track their purchases.
+Shoppy is a full-stack e-commerce web application built using the MERN stack. It allows users to browse products, manage their shopping cart, place orders, and view their order history. Admins can manage products and update order statuses.
 
 ## Features
 
@@ -9,7 +9,7 @@ Shoppy is a full-stack e-commerce web application built using the MERN stack. It
 - View individual product details
 - Add products to the shopping cart
 - Proceed through checkout and place orders
-- Register and log in to an account
+- Register and log in securely
 - View previous orders
 
 ### Admin Features
@@ -17,6 +17,7 @@ Shoppy is a full-stack e-commerce web application built using the MERN stack. It
 - Add, update, and delete products
 - View customer orders
 - Update order statuses
+- Access admin features with role-based authorization
 
 ## Technologies Used
 
@@ -25,27 +26,28 @@ Shoppy is a full-stack e-commerce web application built using the MERN stack. It
 - JavaScript
 - Vite
 - CSS
-## Screenshots
-
-### 1. Home Page
-![Shoppy Home Page](screenshots/shoppy-home.png)
-
-### 2. Shop Page
-![Shoppy Shop Page](screenshots/shoppy-shop.png)
-
-### 3. Product Details
-![Shoppy Product Details](screenshots/shoppy-product.png)
-
-### 4. My Orders
-![Shoppy My Orders](screenshots/shoppy-orders.png)
-
 
 **Backend**
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
-- JSON Web Tokens (JWT), if configured in the authentication flow
+- JSON Web Tokens (JWT)
+- bcryptjs for password hashing
+
+## Screenshots
+
+### Home Page
+![Shoppy Home Page](screenshots/shoppy-home.png)
+
+### Shop Page
+![Shoppy Shop Page](screenshots/shoppy-shop.png)
+
+### Product Details
+![Shoppy Product Details](screenshots/shoppy-product.png)
+
+### My Orders
+![Shoppy My Orders](screenshots/shoppy-orders.png)
 
 ## Project Structure
 
@@ -61,6 +63,7 @@ shoppy/
 │   ├── public/
 │   ├── src/
 │   └── package.json
+├── screenshots/
 └── README.md
 ```
 
@@ -68,7 +71,7 @@ shoppy/
 
 ### Prerequisites
 - Node.js and npm
-- MongoDB running locally or a MongoDB connection URI
+- A MongoDB database or MongoDB connection URI
 
 ### 1. Clone the Repository
 
@@ -84,51 +87,55 @@ cd backend
 npm install
 ```
 
-Create a `.env` file inside the `backend` folder and configure the required environment variables. For example:
+Create a `.env` file inside the `backend` folder with the following variables:
 
 ```env
 MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 PORT=5001
 ```
 
-Use your own MongoDB connection string. Never publish real credentials or secrets.
+Replace the example values with your own local configuration. Never commit real credentials or secrets to GitHub.
 
-Start the backend using the command supported by your project. If there is no development script, you can run:
+Start the backend:
 
 ```bash
 node server.js
 ```
 
+Keep this terminal running.
+
 ### 3. Set Up the Frontend
 
-Open a second terminal:
+Open a second terminal and navigate to the project root:
 
 ```bash
-cd shoppy/frontend
+cd ~/Desktop/shoppy/frontend
 npm install
 npm run dev
 ```
 
-Open the local URL displayed by Vite in your terminal.
+If you cloned the repository somewhere else, replace `~/Desktop/shoppy/frontend` with the path to your own `shoppy/frontend` folder.
+
+Open the local URL shown by Vite in your terminal.
 
 ## Security
-
 - Keep environment variables and credentials out of GitHub.
-- Admin operations should be protected by authentication and authorization middleware.
-- Use your own environment configuration when running the application.
+- Protect admin operations with authentication and authorization middleware.
+- Hash passwords and keep JWT secrets private.
 
 ## Future Improvements
-
 - Add product search and filtering
 - Improve form validation and error handling
 - Add automated tests
 - Deploy the frontend and backend
+- Integrate a secure payment gateway
 
 ## Author
 
 **Fahad K.**
 
-GitHub: [Fahadkt9393](https://github.com/Fahadkt9393)
+GitHub: https://github.com/Fahadkt9393
 
 ---
 
