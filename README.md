@@ -1,33 +1,39 @@
 # Shoppy - MERN E-Commerce Website
 
-Shoppy is a full-stack e-commerce web application built using the MERN stack. It allows users to browse products, manage their shopping cart, place orders, and view their order history. Admins can manage products and update order statuses.
+Shoppy is a full-stack e-commerce web application built using the MERN stack. It allows users to browse products, manage their shopping cart, place orders, and view their order history. Administrators can manage products, view orders, and update order statuses.
 
 ## Features
 
 ### Customer Features
+
 - Browse available products
 - View individual product details
 - Add products to the shopping cart
+- Manage cart items and quantities
 - Proceed through checkout and place orders
 - Register and log in securely
 - View previous orders
 
 ### Admin Features
+
 - View dashboard statistics
 - Add, update, and delete products
 - View customer orders
 - Update order statuses
-- Access admin features with role-based authorization
+- Access administrative features through role-based authorization
 
 ## Technologies Used
 
-**Frontend**
+### Frontend
+
 - React
 - JavaScript
 - Vite
 - CSS
+- React Router
 
-**Backend**
+### Backend
+
 - Node.js
 - Express.js
 - MongoDB
@@ -38,15 +44,19 @@ Shoppy is a full-stack e-commerce web application built using the MERN stack. It
 ## Screenshots
 
 ### Home Page
+
 ![Shoppy Home Page](screenshots/shoppy-home.png)
 
 ### Shop Page
+
 ![Shoppy Shop Page](screenshots/shoppy-shop.png)
 
 ### Product Details
+
 ![Shoppy Product Details](screenshots/shoppy-product.png)
 
 ### My Orders
+
 ![Shoppy My Orders](screenshots/shoppy-orders.png)
 
 ## Project Structure
@@ -70,8 +80,10 @@ shoppy/
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js and npm
 - A MongoDB database or MongoDB connection URI
+- Git
 
 ### 1. Clone the Repository
 
@@ -82,12 +94,14 @@ cd shoppy
 
 ### 2. Set Up the Backend
 
+Open a terminal in the project directory and run:
+
 ```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file inside the `backend` folder with the following variables:
+Create a `.env` file inside the `backend` directory with your own configuration:
 
 ```env
 MONGO_URI=your_mongodb_connection_string
@@ -95,36 +109,37 @@ JWT_SECRET=your_jwt_secret
 PORT=5001
 ```
 
-Replace the example values with your own local configuration. Never commit real credentials or secrets to GitHub.
+Replace the example values with your actual local configuration. Never publish your real database credentials or JWT secret on GitHub.
 
-Start the backend:
+Start the backend server:
 
 ```bash
 node server.js
 ```
 
-Keep this terminal running.
+Keep the backend terminal running.
 
 ### 3. Set Up the Frontend
 
-Open a second terminal and navigate to the project root:
+Open a second terminal window. Navigate to the project root directory if necessary, then run:
 
 ```bash
-cd ~/Desktop/shoppy/frontend
+cd frontend
 npm install
 npm run dev
 ```
 
-If you cloned the repository somewhere else, replace `~/Desktop/shoppy/frontend` with the path to your own `shoppy/frontend` folder.
-
-Open the local URL shown by Vite in your terminal.
+Open the local URL displayed by Vite in your browser.
 
 ## Security
-- Keep environment variables and credentials out of GitHub.
-- Protect admin operations with authentication and authorization middleware.
-- Hash passwords and keep JWT secrets private.
+
+- Passwords are hashed before being stored.
+- JWT is used for authentication.
+- Administrative operations are protected by authentication and role-based authorization.
+- Environment variables are kept out of version control.
 
 ## Future Improvements
+
 - Add product search and filtering
 - Improve form validation and error handling
 - Add automated tests
@@ -133,10 +148,10 @@ Open the local URL shown by Vite in your terminal.
 
 ## Author
 
-**Fahad KT**
+**Fahad K.T**
 
-GitHub: https://github.com/Fahadkt9393
+GitHub: [Fahadkt9393](https://github.com/Fahadkt9393)
 
 ---
 
-This project was developed for learning and portfolio purposes.
+This project was developed for Shoppy is a full-stack e-commerce web application built using the MERN stack. It includes user authentication, product management, shopping cart functionality, checkout, order management, and inventory tracking.
