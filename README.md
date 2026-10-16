@@ -133,7 +133,7 @@ Open the local URL shown by Vite in your terminal.
 
 ## Author
 
-**Fahad K.**
+**Fahad KT**
 
 GitHub: https://github.com/Fahadkt9393
 
