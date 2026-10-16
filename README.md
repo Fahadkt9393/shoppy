@@ -153,5 +153,6 @@ Open the local URL displayed by Vite in your browser.
 GitHub: [Fahadkt9393](https://github.com/Fahadkt9393)
 
 ---
+## About Shoppy
 
-This project was developed for Shoppy is a full-stack e-commerce web application built using the MERN stack. It includes user authentication, product management, shopping cart functionality, checkout, order management, and inventory tracking.
+Shoppy is a full-stack e-commerce web application built using the MERN stack (MongoDB, Express.js, React, and Node.js). It features user authentication, product management, shopping cart functionality, checkout, order management, and inventory tracking.
